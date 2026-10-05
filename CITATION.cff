@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper and this repository."
+title: 'Finite certificates for "When is the Clifford hierarchy generalized semi-Clifford?"'
+type: software
+authors:
+  - family-names: Wang
+    given-names: Rongbiao Thomas
+    affiliation: "University of Chicago"
+  - family-names: Zhang
+    given-names: Bobby Zixuan
+    affiliation: "Duke University"
+version: 1.0.0
+date-released: 2026-10-05
+license: MIT
+repository-code: "https://github.com/numberingeometry/clifford-hierarchy-plane-certificate"

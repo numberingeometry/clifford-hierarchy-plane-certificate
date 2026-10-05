@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "fact": "e6-root-words",
+  "paper_label": "cert:e6-root-words",
+  "navigation": "C19",
+  "classification": "proof",
+  "statement": {
+    "path": "statement.tex",
+    "sha256": "9241cd099a81c91d59b087d1c7881f12021c40dbb4bf775facfe63f45bda897c",
+    "manuscript_revision": "830fed2fa3f20b355240ba62cd93e0435a1d4991",
+    "title": "Root words for $E_6$",
+    "full_tex": "Let $A$ and $B$ be as in Appendix~\\ref{subsec:orthogonal-fibers}. Then $A$ has order $8$ and $\\chi_{A^2B}(z)=z^6+z^3+1$.\n"
+  },
+  "finite_domain": "The binary root matrices A and B of the E_6 example on the six-dimensional root space with the graph form of the Dynkin diagram.",
+  "analytic_entrance_exit_labels": [
+    "thm:exact-cells"
+  ],
+  "dependent_certificates": [],
+  "conventions": "../../paper/conventions.json",
+  "checker_identity": {
+    "src/checking/root_words/__init__.py": "b31a97d8b35ddcd6cc221d6f315ba72908f584a8a12c165fefb807662492ea81",
+    "src/checking/root_words/binary.py": "e81044e7e37a62035d6a46960bbd053b3cf1972123ea61c801e8882c2e6ba824",
+    "src/checking/root_words/runner.py": "535e402ab0f95c8e76b23fdc6785433376652c9cb78a6d2ea09cd46b819fa356",
+    "check.py": "998e8e640610e4b2407ab40cbc265af688e1ce38920425757e97c18f044783f1"
+  },
+  "routes": {
+    "recompute": {
+      "availability": "available",
+      "integrated": true,
+      "covered_subclaims": [
+        "The graph form has rank 6; A has order 8; A^2 B has characteristic polynomial z^6+z^3+1, which is irreducible over F_2."
+      ],
+      "remaining_work": [],
+      "command": "python check.py math --fact e6-root-words",
+      "toolchain": "CPython 3.13.15; standard library",
+      "runtime_seconds": 0.003523999999742955,
+      "last_accepted_run": {
+        "path": "../../results/e6-root-words.json",
+        "sha256": "2520b8655eeef6123528b69a82d61e89e1f0741dfb5446fd5adc0325b80d7219",
+        "statement_sha256": "9241cd099a81c91d59b087d1c7881f12021c40dbb4bf775facfe63f45bda897c",
+        "paper_revision": "fbfe3430b82d48d5e5bfe6636d53a9881fa066fc",
+        "elapsed_seconds": 0.003523999999742955,
+        "run": "20261005T045120759316Z-C19"
+      }
+    },
+    "verify_evidence": {
+      "availability": "not-yet-available",
+      "integrated": false,
+      "covered_subclaims": [],
+      "remaining_work": [
+        "No verifier of supplied evidence separate from the recomputation."
+      ],
+      "command": "python check.py math --fact e6-root-words --route verify_evidence",
+      "toolchain": null,
+      "runtime_seconds": null,
+      "last_accepted_run": null
+    }
+  },
+  "checker_conventions": "paper/conventions.json; each checker states its coordinate order in its docstring",
+  "backend": [
+    "root_words",
+    "C18"
+  ]
+}

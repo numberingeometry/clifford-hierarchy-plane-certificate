@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "fact": "normal-form-of-exceptional-balanced-configurations",
+  "paper_label": "cert:normal-form-of-exceptional-balanced-configurations",
+  "navigation": "C9",
+  "classification": "proof",
+  "statement": {
+    "path": "statement.tex",
+    "sha256": "73341d3da6bd29afff6d66b3ae2633fdbc5e6c38e645f88d6c2a7e5817d5eb68",
+    "manuscript_revision": "830fed2fa3f20b355240ba62cd93e0435a1d4991",
+    "title": "Normal form of the triples $(\\rho,u,D)$",
+    "full_tex": "Let $\\tau_0(x,y,z)=(x,y,z+xy)$, and let $\\rho$ be a permutation of $\\F_2^3$ that is affine or affinely equivalent to $\\tau_0$. Let $u\\ne0$ and let $D$ be an affine plane with $D+u=D$ such that $\\tau\\rho$, where $\\tau(x)=x+u\\,[x\\in D]$, is again affine or affinely equivalent to $\\tau_0$. If fewer than two independent $c$ with $c\\cdot u=0$ make $c\\cdot\\rho$ affine, then after replacing $(\\rho,u,D)$ by $(\\alpha\\rho\\beta,\\bar\\alpha u,\\alpha(D))$ for affine $\\alpha,\\beta$, with $\\bar\\alpha$ the linear part of $\\alpha$, in coordinates $(s,y,z)$ we have $\\rho(s,y,z)=(s,y,z+sy)$, $u=e_y$, and $D=\\{s=1\\}$ or $D=\\{z=1\\}$.\n"
+  },
+  "finite_domain": "The 1,344 affine maps; the permutations rho in {1, tau_0}; all u != 0 and all affine planes D with D+u = D.",
+  "analytic_entrance_exit_labels": [
+    "app:return-balanced"
+  ],
+  "dependent_certificates": [],
+  "conventions": "../../paper/conventions.json",
+  "checker_identity": {
+    "src/checking/c15.py": "c01b270ea3a9ffc867e02731b8dae48b96bb66b315e73151ba40fd5c636fc214",
+    "check.py": "998e8e640610e4b2407ab40cbc265af688e1ce38920425757e97c18f044783f1"
+  },
+  "routes": {
+    "recompute": {
+      "availability": "available",
+      "integrated": true,
+      "covered_subclaims": [
+        "Exactly 36 exceptional pairs (u,D) for rho = tau_0, forming two orbits, of sizes 12 and 24, under the 192 affine alpha with tau_0^{-1} alpha tau_0 affine."
+      ],
+      "remaining_work": [],
+      "command": "python check.py math --fact normal-form-of-exceptional-balanced-configurations",
+      "toolchain": "CPython 3.13.15; standard library",
+      "runtime_seconds": 2.3839741000556387,
+      "last_accepted_run": {
+        "path": "../../results/normal-form-of-exceptional-balanced-configurations.json",
+        "sha256": "9dd0c6c4df4a6effc7bd1074b72ed4a129199ecada3c7b7cbf935596ea4e528a",
+        "statement_sha256": "73341d3da6bd29afff6d66b3ae2633fdbc5e6c38e645f88d6c2a7e5817d5eb68",
+        "paper_revision": "fbfe3430b82d48d5e5bfe6636d53a9881fa066fc",
+        "elapsed_seconds": 2.3839741000556387,
+        "run": "20261005T044714805329Z-C9"
+      }
+    },
+    "verify_evidence": {
+      "availability": "not-yet-available",
+      "integrated": false,
+      "covered_subclaims": [],
+      "remaining_work": [
+        "No verifier of supplied evidence separate from the recomputation."
+      ],
+      "command": "python check.py math --fact normal-form-of-exceptional-balanced-configurations --route verify_evidence",
+      "toolchain": null,
+      "runtime_seconds": null,
+      "last_accepted_run": null
+    }
+  },
+  "checker_conventions": "paper/conventions.json; each checker states its coordinate order in its docstring",
+  "backend": [
+    "c15",
+    null
+  ]
+}

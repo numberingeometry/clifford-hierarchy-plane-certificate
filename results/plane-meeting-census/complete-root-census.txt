@@ -1,0 +1,17 @@
+compiler-version PASS
+compile-abi PASS
+binary-abi PASS
+compile-lock PASS
+coverage PASS
+selftest PASS
+testfamily PASS
+fasttests PASS
+testtiers PASS
+all-root-locks PASS
+{
+  "status": "PASS",
+  "mode": "locks",
+  "fresh_all_roots": true,
+  "run": "runs/fresh-c2",
+  "seconds": 5058.566123299999
+}

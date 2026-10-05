@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "fact": "balanced-rank-two-branch",
+  "paper_label": "cert:balanced-rank-two-branch",
+  "navigation": "C10",
+  "classification": "proof",
+  "statement": {
+    "path": "statement.tex",
+    "sha256": "218c20c959830488d0b5f5bcfff637f4ee5b6a8ff357a20483c0519bcce62033",
+    "manuscript_revision": "830fed2fa3f20b355240ba62cd93e0435a1d4991",
+    "title": "The case $\\operatorname{rank}E=2$",
+    "full_tex": "In Case~2b of the proof of Lemma~\\ref{app:return-balanced}: for $\\ell=z$ and the correction $h=WX_sW^\\dagger$, the monomial gate $Z_1h$, in the basis $\\ket\\pm\\otimes\\ket x$, has a permutation of cycle type $2^26^2$, so this case does not occur. For $\\ell=s$, the Pauli-MASA condition on the off-diagonal block makes every $\\operatorname{diag}\\theta_t$ Clifford, and among the $64$ choices of $a,b,c,d,e,f\\in\\F_2$ the three unipotence conditions hold exactly when $a=b=c=e=0$ and $d=f$.\n"
+  },
+  "finite_domain": "The permutation of Z_1 h on 16 points; the 512 two-target phase tables; the 64 parameter choices a, b, c, d, e, f.",
+  "analytic_entrance_exit_labels": [
+    "app:return-balanced"
+  ],
+  "dependent_certificates": [],
+  "conventions": "../../paper/conventions.json",
+  "checker_identity": {
+    "src/checking/c7.py": "ab0281344807a30212db38904a8294b4ad4ff74c08b870ff49cc7c9b5644f1c0",
+    "check.py": "998e8e640610e4b2407ab40cbc265af688e1ce38920425757e97c18f044783f1"
+  },
+  "routes": {
+    "recompute": {
+      "availability": "available",
+      "integrated": true,
+      "covered_subclaims": [
+        "Z_1 h has cycle type 2^2 6^2; every stationary phase table is Clifford; the unipotence conditions hold exactly when a = b = c = e = 0 and d = f, and then a common witness exists."
+      ],
+      "remaining_work": [],
+      "command": "python check.py math --fact balanced-rank-two-branch",
+      "toolchain": "CPython 3.13.15; standard library",
+      "runtime_seconds": 1.8391552999964915,
+      "last_accepted_run": {
+        "path": "../../results/balanced-rank-two-branch.json",
+        "sha256": "a2128effb2b52b7e13df4bd67068b9262f32608d0bf3ad7d2c22258bc952c345",
+        "statement_sha256": "218c20c959830488d0b5f5bcfff637f4ee5b6a8ff357a20483c0519bcce62033",
+        "paper_revision": "830fed2fa3f20b355240ba62cd93e0435a1d4991",
+        "elapsed_seconds": 1.8387823000084609,
+        "run": "20261005T045400860347Z-C10"
+      }
+    },
+    "verify_evidence": {
+      "availability": "not-yet-available",
+      "integrated": false,
+      "covered_subclaims": [],
+      "remaining_work": [
+        "No verifier of supplied evidence separate from the recomputation."
+      ],
+      "command": "python check.py math --fact balanced-rank-two-branch --route verify_evidence",
+      "toolchain": null,
+      "runtime_seconds": null,
+      "last_accepted_run": null
+    }
+  },
+  "checker_conventions": "paper/conventions.json; each checker states its coordinate order in its docstring",
+  "backend": [
+    "c7",
+    null
+  ]
+}

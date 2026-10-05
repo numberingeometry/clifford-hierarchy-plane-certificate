@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "fact": "three-qubit-flag-preserving-involution-rays",
+  "paper_label": "cert:three-qubit-flag-preserving-involution-rays",
+  "navigation": "C2",
+  "classification": "proof",
+  "statement": {
+    "path": "statement.tex",
+    "sha256": "c0ae4d5d6b7ce9722c5e74295b9ed50688d981bfae4fcafda317d0b846b0c7a2",
+    "manuscript_revision": "830fed2fa3f20b355240ba62cd93e0435a1d4991",
+    "title": "Three-qubit involutions with a flag-preserving permutation",
+    "full_tex": "Let $M$ be a gate of the form~\\eqref{core:eq:row} on three qubits whose permutation preserves the flag $0<\\Span\\{e_z\\}<\\Span\\{e_y,e_z\\}<\\F_2^3$, and let $H_*$ be as in the proof of Proposition~\\ref{gauss-lem:exceptional}. Then $[M]\\in\\C_3(3)$, or $[M]$ is conjugate to $[H_*]$ by an affine--diagonal Clifford gate.\n"
+  },
+  "finite_domain": "The 44 involutive permutations preserving the flag and the 5,795 classes [M] allowed by the involution and trace conditions.",
+  "analytic_entrance_exit_labels": [
+    "gauss-lem:exceptional"
+  ],
+  "dependent_certificates": [],
+  "conventions": "../../paper/conventions.json",
+  "checker_identity": {
+    "src/checking/exact_audit/__init__.py": "27d02baccd3b6ffcb319a48238571e47ddb59a8e49acd7ce4a75a47efae222d7",
+    "src/checking/exact_audit/check_c10.py": "a0436c59cb1a98640b8ca7f6d89e2df41d6468401719d2acd958f87f5df228d2",
+    "src/checking/exact_audit/check_c9.py": "ff7d3c44e4992c5f672080a8feeec1dd327fa6acdc30d7ca9d8c61422a1f4510",
+    "src/checking/exact_audit/check_n3_exceptional.py": "27d98d2ee540f28beee94c7bacd7775b3569a382997de6fad9b54be73d84ff81",
+    "src/checking/exact_audit/mono3.py": "9b877b981f9ec052756ed2ef19ce67bad3509bb439a0b4acac19715c3c32053d",
+    "src/checking/exact_audit/runner.py": "768d7eab82b4fb7efb65b49c7bf826e3cab4c10569ff618d5aaedee3a4024e01",
+    "check.py": "998e8e640610e4b2407ab40cbc265af688e1ce38920425757e97c18f044783f1"
+  },
+  "routes": {
+    "recompute": {
+      "availability": "available",
+      "integrated": true,
+      "covered_subclaims": [
+        "Clifford membership of each class on six generating Paulis; for each of the 256 classes outside C_3(3), the conjugator to [H_*]; the counts of the table in the paper."
+      ],
+      "remaining_work": [],
+      "command": "python check.py math --fact three-qubit-flag-preserving-involution-rays",
+      "toolchain": "CPython 3.13.15; standard library",
+      "runtime_seconds": 4.405086200044025,
+      "last_accepted_run": {
+        "path": "../../results/three-qubit-flag-preserving-involution-rays.json",
+        "sha256": "3cd6731c0fd486ce3d9f083abb5f85b7976ef1a554888e4e01be10bbb0ecb136",
+        "statement_sha256": "c0ae4d5d6b7ce9722c5e74295b9ed50688d981bfae4fcafda317d0b846b0c7a2",
+        "paper_revision": "830fed2fa3f20b355240ba62cd93e0435a1d4991",
+        "elapsed_seconds": 4.368508199986536,
+        "run": "20261005T045346069456Z-C2"
+      }
+    },
+    "verify_evidence": {
+      "availability": "partial",
+      "integrated": false,
+      "covered_subclaims": [
+        "The 256 supplied conjugators are checked inside the recomputation; there is no separate command for them."
+      ],
+      "remaining_work": [
+        "No verifier of supplied evidence separate from the recomputation."
+      ],
+      "command": "python check.py math --fact three-qubit-flag-preserving-involution-rays --route verify_evidence",
+      "toolchain": null,
+      "runtime_seconds": null,
+      "last_accepted_run": null
+    }
+  },
+  "checker_conventions": "paper/conventions.json; each checker states its coordinate order in its docstring",
+  "backend": [
+    "exact_audit",
+    "C13"
+  ]
+}

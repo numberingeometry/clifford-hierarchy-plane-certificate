@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "fact": "invariant-sets-of-input-lagrangians",
+  "paper_label": "cert:invariant-sets-of-input-lagrangians",
+  "navigation": "C13",
+  "classification": "proof",
+  "statement": {
+    "path": "statement.tex",
+    "sha256": "934a17a7f9f4092317cd70e03c005b43446b525dfbd131cd00ff99248900669c",
+    "manuscript_revision": "830fed2fa3f20b355240ba62cd93e0435a1d4991",
+    "title": "Invariant sets of input Lagrangians",
+    "full_tex": "Let $A$ be a non-third-level normal form of \\textup{(\\ref{cert:block-form-clifford-classes})}, and let $D$ be a Clifford conjugate of one of the four gates $\\mathrm{CS}_{yz}^a\\CCZ^b$. If $X(D)$ is invariant under $J_A$, then $L_Z\\in X(D)$.\n"
+  },
+  "finite_domain": "The 1,396 groups E_D of the Clifford conjugates D of CS_yz^a CCZ^b, with 451 distinct sets X(D); the 20 non-third-level cores.",
+  "analytic_entrance_exit_labels": [
+    "app:return-multiple"
+  ],
+  "dependent_certificates": [
+    "cert:mixed-blocks-with-two-input-lagrangians",
+    "cert:block-form-clifford-classes"
+  ],
+  "conventions": "../../paper/conventions.json",
+  "checker_identity": {
+    "src/checking/conventional.py": "1d4e7ed24bb15d804a232ec383f241a0fddd0addf3c3b29c1a768c5f43dd8dc8",
+    "src/checking/conventional_audit.py": "09b0307d4dd6f7f725f71cfd44a824bcb8647326d3c80d41528e09b122ca05ce",
+    "check.py": "998e8e640610e4b2407ab40cbc265af688e1ce38920425757e97c18f044783f1"
+  },
+  "routes": {
+    "recompute": {
+      "availability": "available",
+      "integrated": true,
+      "covered_subclaims": [
+        "The 1,396 groups are exactly the Sp(6,2)-conjugates of the groups of the four gates; for each core, J_A (of order 8 or 64) and the 620 pairs with X(D) invariant under J_A, each with L_Z in X(D)."
+      ],
+      "remaining_work": [],
+      "command": "python check.py math --fact invariant-sets-of-input-lagrangians",
+      "toolchain": "CPython 3.13.15; standard library",
+      "runtime_seconds": 17.919521000003442,
+      "last_accepted_run": {
+        "path": "../../results/invariant-sets-of-input-lagrangians.json",
+        "sha256": "1cb18b5272853505a1cf9e7f82a7b7054e9fc57dd92edf184baaa9b4b207f2ea",
+        "statement_sha256": "934a17a7f9f4092317cd70e03c005b43446b525dfbd131cd00ff99248900669c",
+        "paper_revision": "fbfe3430b82d48d5e5bfe6636d53a9881fa066fc",
+        "elapsed_seconds": 17.919521000003442,
+        "run": "20261005T044818143523Z-C13"
+      }
+    },
+    "verify_evidence": {
+      "availability": "not-yet-available",
+      "integrated": false,
+      "covered_subclaims": [],
+      "remaining_work": [
+        "No verifier of supplied evidence separate from the recomputation."
+      ],
+      "command": "python check.py math --fact invariant-sets-of-input-lagrangians --route verify_evidence",
+      "toolchain": null,
+      "runtime_seconds": null,
+      "last_accepted_run": null
+    }
+  },
+  "checker_conventions": "paper/conventions.json; each checker states its coordinate order in its docstring",
+  "backend": [
+    "conventional",
+    "C5"
+  ]
+}

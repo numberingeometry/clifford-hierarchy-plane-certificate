@@ -1,0 +1,12 @@
+{
+  "V_n": "F_2^(2n)",
+  "coordinates": "v=(x,z)",
+  "Pauli": "P_v=i^(sum_j x_j z_j) X^x Z^z",
+  "correction": "h_v=U P_v U^dagger",
+  "right_derivative": "U P_v U^dagger P_v^dagger",
+  "tensor_order": "qubit zero is least significant; factors are ordered qubit n-1 through zero",
+  "packed_label": "x + (z << n)",
+  "composition": "u*w means w acts first",
+  "symplectic_orientation": "column j is the image of packed basis label 1<<j",
+  "scalar_quotient": "projective comparisons must be explicitly named; exact operator/commutator checks preserve coherent relative phase"
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "fact": "block-form-clifford-classes",
+  "paper_label": "cert:block-form-clifford-classes",
+  "navigation": "C12",
+  "classification": "proof",
+  "statement": {
+    "path": "statement.tex",
+    "sha256": "85de7a37cbbcdcdf1a40ceee6a9db46937214a1277537401662c2d625f4e232b",
+    "manuscript_revision": "830fed2fa3f20b355240ba62cd93e0435a1d4991",
+    "title": "Clifford classes of the block forms",
+    "full_tex": "Under $D\\mapsto C_1DC_2$ with $C_1,C_2\\in\\C_2(3)$, the $512$ block forms $D$ of Lemma~\\ref{app:return-block}\\textup{(4)} fall into $30$ classes. Ten classes are third-level, and every correction $DP_vD^\\dagger$ of the other twenty is third-level. We call the listed representative of a class its normal form. The third-level classes containing a form with $p'=0$ are those of the four gates $\\mathrm{CS}_{yz}^a\\CCZ^b$.\n"
+  },
+  "finite_domain": "The 512 block forms pi_0 i^(axy+bxz+cyz+dxyz) T_p' and the Clifford moves used in the paper.",
+  "analytic_entrance_exit_labels": [
+    "app:return-multiple"
+  ],
+  "dependent_certificates": [],
+  "conventions": "../../paper/conventions.json",
+  "checker_identity": {
+    "src/checking/conventional.py": "1d4e7ed24bb15d804a232ec383f241a0fddd0addf3c3b29c1a768c5f43dd8dc8",
+    "src/checking/conventional_audit.py": "09b0307d4dd6f7f725f71cfd44a824bcb8647326d3c80d41528e09b122ca05ce",
+    "check.py": "998e8e640610e4b2407ab40cbc265af688e1ce38920425757e97c18f044783f1"
+  },
+  "routes": {
+    "recompute": {
+      "availability": "available",
+      "integrated": true,
+      "covered_subclaims": [
+        "30 orbits, each containing exactly one listed core; 10 third-level cores; all 1,280 corrections and right derivatives of the other 20 are third-level; 52,320 normalization steps checked exactly; the third-level classes meeting p' = 0 are exactly the four classes of CS_yz^a CCZ^b."
+      ],
+      "remaining_work": [],
+      "command": "python check.py math --fact block-form-clifford-classes",
+      "toolchain": "CPython 3.13.15; standard library",
+      "runtime_seconds": 47.05603330000304,
+      "last_accepted_run": {
+        "path": "../../results/block-form-clifford-classes.json",
+        "sha256": "c76a2349d5f2dfd47721b8041d3cfcda29ad09b51149e039118534c7017d5214",
+        "statement_sha256": "85de7a37cbbcdcdf1a40ceee6a9db46937214a1277537401662c2d625f4e232b",
+        "paper_revision": "fbfe3430b82d48d5e5bfe6636d53a9881fa066fc",
+        "elapsed_seconds": 47.05603330000304,
+        "run": "20261005T044731076658Z-C12"
+      }
+    },
+    "verify_evidence": {
+      "availability": "not-yet-available",
+      "integrated": false,
+      "covered_subclaims": [],
+      "remaining_work": [
+        "No verifier of supplied evidence separate from the recomputation."
+      ],
+      "command": "python check.py math --fact block-form-clifford-classes --route verify_evidence",
+      "toolchain": null,
+      "runtime_seconds": null,
+      "last_accepted_run": null
+    }
+  },
+  "checker_conventions": "paper/conventions.json; each checker states its coordinate order in its docstring",
+  "backend": [
+    "conventional",
+    "C3"
+  ]
+}

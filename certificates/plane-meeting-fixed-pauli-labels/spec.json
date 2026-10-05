@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "fact": "plane-meeting-fixed-pauli-labels",
+  "paper_label": "cert:plane-meeting-fixed-pauli-labels",
+  "navigation": "C7",
+  "classification": "proof",
+  "statement": {
+    "path": "statement.tex",
+    "sha256": "225dfcf80313338715a862ee3a75ace774d62afae749ee7dfb35eee3d0de1b16",
+    "manuscript_revision": "830fed2fa3f20b355240ba62cd93e0435a1d4991",
+    "title": "A plane meeting the fixed Pauli labels",
+    "full_tex": "For each of the other $1{,}010$ listed $M$ there is a plane $\\Pi_M\\le V_4$ with\n\\[\nN(h)\\cap\\Pi_M\\ne\\{0\\}\\qquad\\text{for all }h\\in\\{M\\}\\cup\\mathcal K(M),\n\\]\nwhere $N(h)=\\{s:hP_sh^\\dagger=\\pm P_s\\}$.\n"
+  },
+  "finite_domain": "The 1,010 listed gates with |N(M)|-1 < 63; the 2,295 Lagrangians of V_4; the 163,216 eligible point maps; both scalar sectors and every solution of the phase conditions.",
+  "analytic_entrance_exit_labels": [
+    "app:finite-endpoint"
+  ],
+  "dependent_certificates": [
+    "cert:r4-representatives-up-to-clifford-conjugacy"
+  ],
+  "conventions": "../../paper/conventions.json",
+  "checker_identity": {
+    "src/checking/conventional_large.py": "4c2f717be369d86713c03d6c07916c2f07a75f3144c7c4c73d7b06bf1b88b214",
+    "check.py": "998e8e640610e4b2407ab40cbc265af688e1ce38920425757e97c18f044783f1"
+  },
+  "routes": {
+    "recompute": {
+      "availability": "available",
+      "integrated": true,
+      "covered_subclaims": [
+        "The exact C kernel is compiled, passes its regression tests, and is run afresh on all 1,010 gates; for each gate the computed plane, level and sector must be those listed in data/lock-n4.txt."
+      ],
+      "remaining_work": [],
+      "command": "python check.py math --fact plane-meeting-fixed-pauli-labels",
+      "toolchain": "CPython 3.13.15; Zig 0.15.2 (Clang 20.1.2); NumPy 2.3.2 (atlas coverage)",
+      "runtime_seconds": 29509.2396364,
+      "last_accepted_run": {
+        "path": "../../results/plane-meeting-fixed-pauli-labels.json",
+        "sha256": "bba1352471675d4fd3e71380def560a3f9b90a94e60a161bbac6c93cd5dae502",
+        "statement_sha256": "225dfcf80313338715a862ee3a75ace774d62afae749ee7dfb35eee3d0de1b16",
+        "paper_revision": "fbfe3430b82d48d5e5bfe6636d53a9881fa066fc",
+        "elapsed_seconds": 5060.74104220001,
+        "run": "20261005T032253210683Z-C7"
+      },
+      "requires_explicit_expensive": true
+    },
+    "verify_evidence": {
+      "availability": "not-yet-available",
+      "integrated": false,
+      "covered_subclaims": [],
+      "remaining_work": [
+        "No verifier of supplied evidence separate from the recomputation."
+      ],
+      "command": "python check.py math --fact plane-meeting-fixed-pauli-labels --route verify_evidence",
+      "toolchain": null,
+      "runtime_seconds": null,
+      "last_accepted_run": null
+    }
+  },
+  "checker_conventions": "paper/conventions.json; each checker states its coordinate order in its docstring",
+  "backend": [
+    "conventional_large",
+    "C2"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "fact": "cliffords-commuting-with-hstar",
+  "paper_label": "cert:cliffords-commuting-with-hstar",
+  "navigation": "C3",
+  "classification": "proof",
+  "statement": {
+    "path": "statement.tex",
+    "sha256": "f21be8275f97112ab12464d2085f3918a0a480e8761f9b39e2c87ca028e32359",
+    "manuscript_revision": "830fed2fa3f20b355240ba62cd93e0435a1d4991",
+    "title": "Cliffords commuting with $H_*$",
+    "full_tex": "With $H_*$ as above, a Hermitian gate $K\\in\\C_2(3)$ commutes with $H_*$ if and only if $K=\\pm(-1)^{ax+bxy+c(1+x)z}$ with $a,b,c\\in\\F_2$. The traceless ones are $\\pm Z_x$ and $\\pm$ two non-Pauli gates whose supports span $L_Z$.\n"
+  },
+  "finite_domain": "The 1,344 affine permutations times the 512 diagonal Clifford phases, modulo scalars.",
+  "analytic_entrance_exit_labels": [
+    "gauss-lem:three-correction-compatibility"
+  ],
+  "dependent_certificates": [],
+  "conventions": "../../paper/conventions.json",
+  "checker_identity": {
+    "src/checking/c14.py": "71fa09be882d417ba160c68d88768aaa084803934341e23a2a7569f6c5024a2b",
+    "check.py": "998e8e640610e4b2407ab40cbc265af688e1ce38920425757e97c18f044783f1"
+  },
+  "routes": {
+    "recompute": {
+      "availability": "available",
+      "integrated": true,
+      "covered_subclaims": [
+        "Exactly 64 classes commute with H_*, and exactly eight of them have a Hermitian representative, namely plus or minus the listed gates."
+      ],
+      "remaining_work": [],
+      "command": "python check.py math --fact cliffords-commuting-with-hstar",
+      "toolchain": "CPython 3.13.15; standard library",
+      "runtime_seconds": 0.02815329999430105,
+      "last_accepted_run": {
+        "path": "../../results/cliffords-commuting-with-hstar.json",
+        "sha256": "666a2339f225885acada84b5e0f88d903057a3caed2c4cfff022d37863827870",
+        "statement_sha256": "f21be8275f97112ab12464d2085f3918a0a480e8761f9b39e2c87ca028e32359",
+        "paper_revision": "fbfe3430b82d48d5e5bfe6636d53a9881fa066fc",
+        "elapsed_seconds": 0.02815329999430105,
+        "run": "20261005T032242769444Z-C3"
+      }
+    },
+    "verify_evidence": {
+      "availability": "not-yet-available",
+      "integrated": false,
+      "covered_subclaims": [],
+      "remaining_work": [
+        "No verifier of supplied evidence separate from the recomputation."
+      ],
+      "command": "python check.py math --fact cliffords-commuting-with-hstar --route verify_evidence",
+      "toolchain": null,
+      "runtime_seconds": null,
+      "last_accepted_run": null
+    }
+  },
+  "checker_conventions": "paper/conventions.json; each checker states its coordinate order in its docstring",
+  "backend": [
+    "c14",
+    null
+  ]
+}

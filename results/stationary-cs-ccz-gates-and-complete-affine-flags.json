@@ -1,0 +1,4790 @@
+{
+  "schema_version": 1,
+  "status": "accepted",
+  "kind": "mathematical-check",
+  "exact": true,
+  "fact": "cert:stationary-cs-ccz-gates-and-complete-affine-flags",
+  "navigation": "C1",
+  "route": "recompute",
+  "statement_sha256": "d5cb23f689943ba328234b4afc0c7e005a0369af41361530008966e90aa4821a",
+  "paper_revision": "fbfe3430b82d48d5e5bfe6636d53a9881fa066fc",
+  "elapsed_seconds": 0.7922085000318475,
+  "environment": {
+    "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "win32"
+  },
+  "analytic_premises": [
+    "lem:tool-bridge"
+  ],
+  "formal_verification": false,
+  "conventions": "paper/conventions.json; each checker states its coordinate order in its docstring",
+  "checker_sha256": {
+    "src/checking/c14.py": "71fa09be882d417ba160c68d88768aaa084803934341e23a2a7569f6c5024a2b",
+    "src/checking/c15.py": "c01b270ea3a9ffc867e02731b8dae48b96bb66b315e73151ba40fd5c636fc214",
+    "src/checking/c16.py": "5e5bbfc9c52afeaa2d51d39d4da4258f09eac1e5b9c0263d8f445f1fe2fadb3e",
+    "src/checking/c17.py": "0410a422b7c380da6d8158d46389848243cba51941c6525c2f50140cf9209eb2",
+    "src/checking/c7.py": "ab0281344807a30212db38904a8294b4ad4ff74c08b870ff49cc7c9b5644f1c0",
+    "src/checking/c8.py": "306d7ce432cadf3755925be8201ac6c22682aa45848f8afea2b01c516a100a0f",
+    "src/checking/conventional.py": "1d4e7ed24bb15d804a232ec383f241a0fddd0addf3c3b29c1a768c5f43dd8dc8",
+    "src/checking/conventional_audit.py": "09b0307d4dd6f7f725f71cfd44a824bcb8647326d3c80d41528e09b122ca05ce",
+    "src/checking/conventional_large.py": "4c2f717be369d86713c03d6c07916c2f07a75f3144c7c4c73d7b06bf1b88b214",
+    "src/checking/conventions.py": "4cb1006ad75ab19326ed8e2c6e239d0e0ead8f6c8d0a13f15aaa54fd0e55e136",
+    "src/checking/e2_hierarchy.py": "0e382b7da938240d08599c49c06c116477ff747843dfda886a5f3053fd8e416e",
+    "src/checking/e6_level.py": "ccd304f072fe1ef08b4fe4061fe911581c5ef9e1f942d08f7886e8fcab9ce25f",
+    "src/checking/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/checking/exact_audit/check_c10.py": "a0436c59cb1a98640b8ca7f6d89e2df41d6468401719d2acd958f87f5df228d2",
+    "src/checking/exact_audit/check_c9.py": "ff7d3c44e4992c5f672080a8feeec1dd327fa6acdc30d7ca9d8c61422a1f4510",
+    "src/checking/exact_audit/check_n3_exceptional.py": "27d98d2ee540f28beee94c7bacd7775b3569a382997de6fad9b54be73d84ff81",
+    "src/checking/exact_audit/mono3.py": "9b877b981f9ec052756ed2ef19ce67bad3509bb439a0b4acac19715c3c32053d",
+    "src/checking/exact_audit/runner.py": "768d7eab82b4fb7efb65b49c7bf826e3cab4c10569ff618d5aaedee3a4024e01",
+    "src/checking/exact_audit/__init__.py": "27d02baccd3b6ffcb319a48238571e47ddb59a8e49acd7ce4a75a47efae222d7",
+    "src/checking/n3_descent/n3_descent_check.py": "729e2ac21378f958c512a9d9c2916252dbadc369f332b6d9399f9c1093dc7993",
+    "src/checking/n3_descent/runner.py": "83f9971a2d8b6ec7b9110a06caed2e361de58bf07bdca1ca68297ca5d078b2d2",
+    "src/checking/n3_descent/__init__.py": "487c40ee51b1ddeb8bd96702e0b048715aa71111fdf2a5ebbf58933ed81ae465",
+    "src/checking/root_words/binary.py": "e81044e7e37a62035d6a46960bbd053b3cf1972123ea61c801e8882c2e6ba824",
+    "src/checking/root_words/runner.py": "535e402ab0f95c8e76b23fdc6785433376652c9cb78a6d2ea09cd46b819fa356",
+    "src/checking/root_words/__init__.py": "b31a97d8b35ddcd6cc221d6f315ba72908f584a8a12c165fefb807662492ea81"
+  },
+  "result": {
+    "exact": true,
+    "fact": "stationary-cs-ccz-gates-and-complete-affine-flags",
+    "route": "recompute",
+    "status": "accepted",
+    "input_lagrangians": 135,
+    "complete_affine_flags": 21,
+    "affine_permutations": 1344,
+    "witness_counts": {
+      "I": 135,
+      "CS_yz": 3,
+      "CCZ": 15,
+      "CS_yz_CCZ": 3
+    },
+    "all_four_gates_stationary": true,
+    "frames_checked": 156,
+    "frame_affine_pairs_checked": 209664,
+    "implication_failures": 0,
+    "frame_ordering_analytic_premise": "Clifford eigenvalue frames for one Pauli MASA differ by affine orderings; universal affine-map and flag testing is invariant under those changes",
+    "frame_records": [
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          2,
+          4
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          1,
+          2,
+          3,
+          32,
+          33,
+          34,
+          35
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          2,
+          32
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          1,
+          2,
+          3,
+          36,
+          37,
+          38,
+          39
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          2,
+          36
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          1,
+          4,
+          5,
+          16,
+          17,
+          20,
+          21
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          4,
+          16
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          1,
+          4,
+          5,
+          18,
+          19,
+          22,
+          23
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          4,
+          18
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          1,
+          6,
+          7,
+          48,
+          49,
+          54,
+          55
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          6,
+          48
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          1,
+          6,
+          7,
+          50,
+          51,
+          52,
+          53
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          6,
+          50
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          1,
+          16,
+          17,
+          32,
+          33,
+          48,
+          49
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          16,
+          32
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          1,
+          16,
+          17,
+          36,
+          37,
+          52,
+          53
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          16,
+          36
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          1,
+          18,
+          19,
+          32,
+          33,
+          50,
+          51
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          18,
+          32
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          1,
+          18,
+          19,
+          36,
+          37,
+          54,
+          55
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          18,
+          36
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          1,
+          20,
+          21,
+          34,
+          35,
+          54,
+          55
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          20,
+          34
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          1,
+          20,
+          21,
+          38,
+          39,
+          50,
+          51
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          20,
+          38
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          1,
+          22,
+          23,
+          34,
+          35,
+          52,
+          53
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          22,
+          34
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          1,
+          22,
+          23,
+          38,
+          39,
+          48,
+          49
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          22,
+          38
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14
+        ],
+        "hermitian_pauli_basis": [
+          2,
+          4,
+          8
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          2,
+          4,
+          6,
+          9,
+          11,
+          13,
+          15
+        ],
+        "hermitian_pauli_basis": [
+          2,
+          4,
+          9
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          2,
+          5,
+          7,
+          40,
+          42,
+          45,
+          47
+        ],
+        "hermitian_pauli_basis": [
+          2,
+          5,
+          40
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          2,
+          5,
+          7,
+          41,
+          43,
+          44,
+          46
+        ],
+        "hermitian_pauli_basis": [
+          2,
+          5,
+          41
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          2,
+          8,
+          10,
+          32,
+          34,
+          40,
+          42
+        ],
+        "hermitian_pauli_basis": [
+          2,
+          8,
+          32
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          2,
+          8,
+          10,
+          36,
+          38,
+          44,
+          46
+        ],
+        "hermitian_pauli_basis": [
+          2,
+          8,
+          36
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          2,
+          9,
+          11,
+          32,
+          34,
+          41,
+          43
+        ],
+        "hermitian_pauli_basis": [
+          2,
+          9,
+          32
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          2,
+          9,
+          11,
+          36,
+          38,
+          45,
+          47
+        ],
+        "hermitian_pauli_basis": [
+          2,
+          9,
+          36
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          2,
+          12,
+          14,
+          33,
+          35,
+          45,
+          47
+        ],
+        "hermitian_pauli_basis": [
+          2,
+          12,
+          33
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          2,
+          12,
+          14,
+          37,
+          39,
+          41,
+          43
+        ],
+        "hermitian_pauli_basis": [
+          2,
+          12,
+          37
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          2,
+          13,
+          15,
+          33,
+          35,
+          44,
+          46
+        ],
+        "hermitian_pauli_basis": [
+          2,
+          13,
+          33
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          2,
+          13,
+          15,
+          37,
+          39,
+          40,
+          42
+        ],
+        "hermitian_pauli_basis": [
+          2,
+          13,
+          37
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          3,
+          4,
+          7,
+          24,
+          27,
+          28,
+          31
+        ],
+        "hermitian_pauli_basis": [
+          3,
+          4,
+          24
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          3,
+          4,
+          7,
+          25,
+          26,
+          29,
+          30
+        ],
+        "hermitian_pauli_basis": [
+          3,
+          4,
+          25
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          3,
+          5,
+          6,
+          56,
+          59,
+          61,
+          62
+        ],
+        "hermitian_pauli_basis": [
+          3,
+          5,
+          56
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          3,
+          5,
+          6,
+          57,
+          58,
+          60,
+          63
+        ],
+        "hermitian_pauli_basis": [
+          3,
+          5,
+          57
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          3,
+          24,
+          27,
+          32,
+          35,
+          56,
+          59
+        ],
+        "hermitian_pauli_basis": [
+          3,
+          24,
+          32
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          3,
+          24,
+          27,
+          36,
+          39,
+          60,
+          63
+        ],
+        "hermitian_pauli_basis": [
+          3,
+          24,
+          36
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          3,
+          25,
+          26,
+          32,
+          35,
+          57,
+          58
+        ],
+        "hermitian_pauli_basis": [
+          3,
+          25,
+          32
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          3,
+          25,
+          26,
+          36,
+          39,
+          61,
+          62
+        ],
+        "hermitian_pauli_basis": [
+          3,
+          25,
+          36
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          3,
+          28,
+          31,
+          33,
+          34,
+          61,
+          62
+        ],
+        "hermitian_pauli_basis": [
+          3,
+          28,
+          33
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          3,
+          28,
+          31,
+          37,
+          38,
+          57,
+          58
+        ],
+        "hermitian_pauli_basis": [
+          3,
+          28,
+          37
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          3,
+          29,
+          30,
+          33,
+          34,
+          60,
+          63
+        ],
+        "hermitian_pauli_basis": [
+          3,
+          29,
+          33
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          3,
+          29,
+          30,
+          37,
+          38,
+          56,
+          59
+        ],
+        "hermitian_pauli_basis": [
+          3,
+          29,
+          37
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28
+        ],
+        "hermitian_pauli_basis": [
+          4,
+          8,
+          16
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          4,
+          8,
+          12,
+          18,
+          22,
+          26,
+          30
+        ],
+        "hermitian_pauli_basis": [
+          4,
+          8,
+          18
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          4,
+          9,
+          13,
+          16,
+          20,
+          25,
+          29
+        ],
+        "hermitian_pauli_basis": [
+          4,
+          9,
+          16
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          4,
+          9,
+          13,
+          18,
+          22,
+          27,
+          31
+        ],
+        "hermitian_pauli_basis": [
+          4,
+          9,
+          18
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          4,
+          10,
+          14,
+          17,
+          21,
+          27,
+          31
+        ],
+        "hermitian_pauli_basis": [
+          4,
+          10,
+          17
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          4,
+          10,
+          14,
+          19,
+          23,
+          25,
+          29
+        ],
+        "hermitian_pauli_basis": [
+          4,
+          10,
+          19
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          4,
+          11,
+          15,
+          17,
+          21,
+          26,
+          30
+        ],
+        "hermitian_pauli_basis": [
+          4,
+          11,
+          17
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          4,
+          11,
+          15,
+          19,
+          23,
+          24,
+          28
+        ],
+        "hermitian_pauli_basis": [
+          4,
+          11,
+          19
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          5,
+          16,
+          21,
+          40,
+          45,
+          56,
+          61
+        ],
+        "hermitian_pauli_basis": [
+          5,
+          16,
+          40
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          5,
+          16,
+          21,
+          41,
+          44,
+          57,
+          60
+        ],
+        "hermitian_pauli_basis": [
+          5,
+          16,
+          41
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          5,
+          17,
+          20,
+          42,
+          47,
+          59,
+          62
+        ],
+        "hermitian_pauli_basis": [
+          5,
+          17,
+          42
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          5,
+          17,
+          20,
+          43,
+          46,
+          58,
+          63
+        ],
+        "hermitian_pauli_basis": [
+          5,
+          17,
+          43
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          5,
+          18,
+          23,
+          40,
+          45,
+          58,
+          63
+        ],
+        "hermitian_pauli_basis": [
+          5,
+          18,
+          40
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          5,
+          18,
+          23,
+          41,
+          44,
+          59,
+          62
+        ],
+        "hermitian_pauli_basis": [
+          5,
+          18,
+          41
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          5,
+          19,
+          22,
+          42,
+          47,
+          57,
+          60
+        ],
+        "hermitian_pauli_basis": [
+          5,
+          19,
+          42
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          5,
+          19,
+          22,
+          43,
+          46,
+          56,
+          61
+        ],
+        "hermitian_pauli_basis": [
+          5,
+          19,
+          43
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          6,
+          8,
+          14,
+          48,
+          54,
+          56,
+          62
+        ],
+        "hermitian_pauli_basis": [
+          6,
+          8,
+          48
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          6,
+          8,
+          14,
+          50,
+          52,
+          58,
+          60
+        ],
+        "hermitian_pauli_basis": [
+          6,
+          8,
+          50
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          6,
+          9,
+          15,
+          48,
+          54,
+          57,
+          63
+        ],
+        "hermitian_pauli_basis": [
+          6,
+          9,
+          48
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          6,
+          9,
+          15,
+          50,
+          52,
+          59,
+          61
+        ],
+        "hermitian_pauli_basis": [
+          6,
+          9,
+          50
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          6,
+          10,
+          12,
+          49,
+          55,
+          59,
+          61
+        ],
+        "hermitian_pauli_basis": [
+          6,
+          10,
+          49
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          6,
+          10,
+          12,
+          51,
+          53,
+          57,
+          63
+        ],
+        "hermitian_pauli_basis": [
+          6,
+          10,
+          51
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          6,
+          11,
+          13,
+          49,
+          55,
+          58,
+          60
+        ],
+        "hermitian_pauli_basis": [
+          6,
+          11,
+          49
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          6,
+          11,
+          13,
+          51,
+          53,
+          56,
+          62
+        ],
+        "hermitian_pauli_basis": [
+          6,
+          11,
+          51
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          7,
+          24,
+          31,
+          40,
+          47,
+          48,
+          55
+        ],
+        "hermitian_pauli_basis": [
+          7,
+          24,
+          40
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          7,
+          24,
+          31,
+          43,
+          44,
+          51,
+          52
+        ],
+        "hermitian_pauli_basis": [
+          7,
+          24,
+          43
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          7,
+          25,
+          30,
+          41,
+          46,
+          48,
+          55
+        ],
+        "hermitian_pauli_basis": [
+          7,
+          25,
+          41
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          7,
+          25,
+          30,
+          42,
+          45,
+          51,
+          52
+        ],
+        "hermitian_pauli_basis": [
+          7,
+          25,
+          42
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          7,
+          26,
+          29,
+          40,
+          47,
+          50,
+          53
+        ],
+        "hermitian_pauli_basis": [
+          7,
+          26,
+          40
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          7,
+          26,
+          29,
+          43,
+          44,
+          49,
+          54
+        ],
+        "hermitian_pauli_basis": [
+          7,
+          26,
+          43
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          7,
+          27,
+          28,
+          41,
+          46,
+          50,
+          53
+        ],
+        "hermitian_pauli_basis": [
+          7,
+          27,
+          41
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          7,
+          27,
+          28,
+          42,
+          45,
+          49,
+          54
+        ],
+        "hermitian_pauli_basis": [
+          7,
+          27,
+          42
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          8,
+          16,
+          24,
+          32,
+          40,
+          48,
+          56
+        ],
+        "hermitian_pauli_basis": [
+          8,
+          16,
+          32
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          8,
+          16,
+          24,
+          36,
+          44,
+          52,
+          60
+        ],
+        "hermitian_pauli_basis": [
+          8,
+          16,
+          36
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          8,
+          18,
+          26,
+          32,
+          40,
+          50,
+          58
+        ],
+        "hermitian_pauli_basis": [
+          8,
+          18,
+          32
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          8,
+          18,
+          26,
+          36,
+          44,
+          54,
+          62
+        ],
+        "hermitian_pauli_basis": [
+          8,
+          18,
+          36
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          8,
+          20,
+          28,
+          34,
+          42,
+          54,
+          62
+        ],
+        "hermitian_pauli_basis": [
+          8,
+          20,
+          34
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          8,
+          20,
+          28,
+          38,
+          46,
+          50,
+          58
+        ],
+        "hermitian_pauli_basis": [
+          8,
+          20,
+          38
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          8,
+          22,
+          30,
+          34,
+          42,
+          52,
+          60
+        ],
+        "hermitian_pauli_basis": [
+          8,
+          22,
+          34
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          8,
+          22,
+          30,
+          38,
+          46,
+          48,
+          56
+        ],
+        "hermitian_pauli_basis": [
+          8,
+          22,
+          38
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          9,
+          16,
+          25,
+          32,
+          41,
+          48,
+          57
+        ],
+        "hermitian_pauli_basis": [
+          9,
+          16,
+          32
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          9,
+          16,
+          25,
+          36,
+          45,
+          52,
+          61
+        ],
+        "hermitian_pauli_basis": [
+          9,
+          16,
+          36
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          9,
+          18,
+          27,
+          32,
+          41,
+          50,
+          59
+        ],
+        "hermitian_pauli_basis": [
+          9,
+          18,
+          32
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          9,
+          18,
+          27,
+          36,
+          45,
+          54,
+          63
+        ],
+        "hermitian_pauli_basis": [
+          9,
+          18,
+          36
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          9,
+          20,
+          29,
+          34,
+          43,
+          54,
+          63
+        ],
+        "hermitian_pauli_basis": [
+          9,
+          20,
+          34
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          9,
+          20,
+          29,
+          38,
+          47,
+          50,
+          59
+        ],
+        "hermitian_pauli_basis": [
+          9,
+          20,
+          38
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          9,
+          22,
+          31,
+          34,
+          43,
+          52,
+          61
+        ],
+        "hermitian_pauli_basis": [
+          9,
+          22,
+          34
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          9,
+          22,
+          31,
+          38,
+          47,
+          48,
+          57
+        ],
+        "hermitian_pauli_basis": [
+          9,
+          22,
+          38
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          10,
+          17,
+          27,
+          32,
+          42,
+          49,
+          59
+        ],
+        "hermitian_pauli_basis": [
+          10,
+          17,
+          32
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          10,
+          17,
+          27,
+          36,
+          46,
+          53,
+          63
+        ],
+        "hermitian_pauli_basis": [
+          10,
+          17,
+          36
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          10,
+          19,
+          25,
+          32,
+          42,
+          51,
+          57
+        ],
+        "hermitian_pauli_basis": [
+          10,
+          19,
+          32
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          10,
+          19,
+          25,
+          36,
+          46,
+          55,
+          61
+        ],
+        "hermitian_pauli_basis": [
+          10,
+          19,
+          36
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          10,
+          21,
+          31,
+          34,
+          40,
+          55,
+          61
+        ],
+        "hermitian_pauli_basis": [
+          10,
+          21,
+          34
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          10,
+          21,
+          31,
+          38,
+          44,
+          51,
+          57
+        ],
+        "hermitian_pauli_basis": [
+          10,
+          21,
+          38
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          10,
+          23,
+          29,
+          34,
+          40,
+          53,
+          63
+        ],
+        "hermitian_pauli_basis": [
+          10,
+          23,
+          34
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          10,
+          23,
+          29,
+          38,
+          44,
+          49,
+          59
+        ],
+        "hermitian_pauli_basis": [
+          10,
+          23,
+          38
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          11,
+          17,
+          26,
+          32,
+          43,
+          49,
+          58
+        ],
+        "hermitian_pauli_basis": [
+          11,
+          17,
+          32
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          11,
+          17,
+          26,
+          36,
+          47,
+          53,
+          62
+        ],
+        "hermitian_pauli_basis": [
+          11,
+          17,
+          36
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          11,
+          19,
+          24,
+          32,
+          43,
+          51,
+          56
+        ],
+        "hermitian_pauli_basis": [
+          11,
+          19,
+          32
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          11,
+          19,
+          24,
+          36,
+          47,
+          55,
+          60
+        ],
+        "hermitian_pauli_basis": [
+          11,
+          19,
+          36
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          11,
+          21,
+          30,
+          34,
+          41,
+          55,
+          60
+        ],
+        "hermitian_pauli_basis": [
+          11,
+          21,
+          34
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          11,
+          21,
+          30,
+          38,
+          45,
+          51,
+          56
+        ],
+        "hermitian_pauli_basis": [
+          11,
+          21,
+          38
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          11,
+          23,
+          28,
+          34,
+          41,
+          53,
+          62
+        ],
+        "hermitian_pauli_basis": [
+          11,
+          23,
+          34
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          11,
+          23,
+          28,
+          38,
+          45,
+          49,
+          58
+        ],
+        "hermitian_pauli_basis": [
+          11,
+          23,
+          38
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          12,
+          16,
+          28,
+          33,
+          45,
+          49,
+          61
+        ],
+        "hermitian_pauli_basis": [
+          12,
+          16,
+          33
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          12,
+          16,
+          28,
+          37,
+          41,
+          53,
+          57
+        ],
+        "hermitian_pauli_basis": [
+          12,
+          16,
+          37
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          12,
+          18,
+          30,
+          33,
+          45,
+          51,
+          63
+        ],
+        "hermitian_pauli_basis": [
+          12,
+          18,
+          33
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          12,
+          18,
+          30,
+          37,
+          41,
+          55,
+          59
+        ],
+        "hermitian_pauli_basis": [
+          12,
+          18,
+          37
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          12,
+          20,
+          24,
+          35,
+          47,
+          55,
+          59
+        ],
+        "hermitian_pauli_basis": [
+          12,
+          20,
+          35
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          12,
+          20,
+          24,
+          39,
+          43,
+          51,
+          63
+        ],
+        "hermitian_pauli_basis": [
+          12,
+          20,
+          39
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          12,
+          22,
+          26,
+          35,
+          47,
+          53,
+          57
+        ],
+        "hermitian_pauli_basis": [
+          12,
+          22,
+          35
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          12,
+          22,
+          26,
+          39,
+          43,
+          49,
+          61
+        ],
+        "hermitian_pauli_basis": [
+          12,
+          22,
+          39
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          13,
+          16,
+          29,
+          33,
+          44,
+          49,
+          60
+        ],
+        "hermitian_pauli_basis": [
+          13,
+          16,
+          33
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          13,
+          16,
+          29,
+          37,
+          40,
+          53,
+          56
+        ],
+        "hermitian_pauli_basis": [
+          13,
+          16,
+          37
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          13,
+          18,
+          31,
+          33,
+          44,
+          51,
+          62
+        ],
+        "hermitian_pauli_basis": [
+          13,
+          18,
+          33
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          13,
+          18,
+          31,
+          37,
+          40,
+          55,
+          58
+        ],
+        "hermitian_pauli_basis": [
+          13,
+          18,
+          37
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          13,
+          20,
+          25,
+          35,
+          46,
+          55,
+          58
+        ],
+        "hermitian_pauli_basis": [
+          13,
+          20,
+          35
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          13,
+          20,
+          25,
+          39,
+          42,
+          51,
+          62
+        ],
+        "hermitian_pauli_basis": [
+          13,
+          20,
+          39
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          13,
+          22,
+          27,
+          35,
+          46,
+          53,
+          56
+        ],
+        "hermitian_pauli_basis": [
+          13,
+          22,
+          35
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          13,
+          22,
+          27,
+          39,
+          42,
+          49,
+          60
+        ],
+        "hermitian_pauli_basis": [
+          13,
+          22,
+          39
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          14,
+          17,
+          31,
+          33,
+          47,
+          48,
+          62
+        ],
+        "hermitian_pauli_basis": [
+          14,
+          17,
+          33
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          14,
+          17,
+          31,
+          37,
+          43,
+          52,
+          58
+        ],
+        "hermitian_pauli_basis": [
+          14,
+          17,
+          37
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          14,
+          19,
+          29,
+          33,
+          47,
+          50,
+          60
+        ],
+        "hermitian_pauli_basis": [
+          14,
+          19,
+          33
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          14,
+          19,
+          29,
+          37,
+          43,
+          54,
+          56
+        ],
+        "hermitian_pauli_basis": [
+          14,
+          19,
+          37
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          14,
+          21,
+          27,
+          35,
+          45,
+          54,
+          56
+        ],
+        "hermitian_pauli_basis": [
+          14,
+          21,
+          35
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          14,
+          21,
+          27,
+          39,
+          41,
+          50,
+          60
+        ],
+        "hermitian_pauli_basis": [
+          14,
+          21,
+          39
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          14,
+          23,
+          25,
+          35,
+          45,
+          52,
+          58
+        ],
+        "hermitian_pauli_basis": [
+          14,
+          23,
+          35
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          14,
+          23,
+          25,
+          39,
+          41,
+          48,
+          62
+        ],
+        "hermitian_pauli_basis": [
+          14,
+          23,
+          39
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          15,
+          17,
+          30,
+          33,
+          46,
+          48,
+          63
+        ],
+        "hermitian_pauli_basis": [
+          15,
+          17,
+          33
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          15,
+          17,
+          30,
+          37,
+          42,
+          52,
+          59
+        ],
+        "hermitian_pauli_basis": [
+          15,
+          17,
+          37
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          15,
+          19,
+          28,
+          33,
+          46,
+          50,
+          61
+        ],
+        "hermitian_pauli_basis": [
+          15,
+          19,
+          33
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          15,
+          19,
+          28,
+          37,
+          42,
+          54,
+          57
+        ],
+        "hermitian_pauli_basis": [
+          15,
+          19,
+          37
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          15,
+          21,
+          26,
+          35,
+          44,
+          54,
+          57
+        ],
+        "hermitian_pauli_basis": [
+          15,
+          21,
+          35
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          15,
+          21,
+          26,
+          39,
+          40,
+          50,
+          61
+        ],
+        "hermitian_pauli_basis": [
+          15,
+          21,
+          39
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          15,
+          23,
+          24,
+          35,
+          44,
+          52,
+          59
+        ],
+        "hermitian_pauli_basis": [
+          15,
+          23,
+          35
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "I",
+        "input_lagrangian": [
+          0,
+          15,
+          23,
+          24,
+          39,
+          40,
+          48,
+          63
+        ],
+        "hermitian_pauli_basis": [
+          15,
+          23,
+          39
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "CS_yz",
+        "input_lagrangian": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          2,
+          4
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "CS_yz",
+        "input_lagrangian": [
+          0,
+          1,
+          2,
+          3,
+          32,
+          33,
+          34,
+          35
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          2,
+          32
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "CS_yz",
+        "input_lagrangian": [
+          0,
+          1,
+          2,
+          3,
+          36,
+          37,
+          38,
+          39
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          2,
+          36
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "CCZ",
+        "input_lagrangian": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          2,
+          4
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "CCZ",
+        "input_lagrangian": [
+          0,
+          1,
+          2,
+          3,
+          32,
+          33,
+          34,
+          35
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          2,
+          32
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          6
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 128
+      },
+      {
+        "gate": "CCZ",
+        "input_lagrangian": [
+          0,
+          1,
+          2,
+          3,
+          36,
+          37,
+          38,
+          39
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          2,
+          36
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          6
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 128
+      },
+      {
+        "gate": "CCZ",
+        "input_lagrangian": [
+          0,
+          1,
+          4,
+          5,
+          16,
+          17,
+          20,
+          21
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          4,
+          16
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          6
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 128
+      },
+      {
+        "gate": "CCZ",
+        "input_lagrangian": [
+          0,
+          1,
+          4,
+          5,
+          18,
+          19,
+          22,
+          23
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          4,
+          18
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          6
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 128
+      },
+      {
+        "gate": "CCZ",
+        "input_lagrangian": [
+          0,
+          1,
+          6,
+          7,
+          48,
+          49,
+          54,
+          55
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          6,
+          48
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          4,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 128
+      },
+      {
+        "gate": "CCZ",
+        "input_lagrangian": [
+          0,
+          1,
+          6,
+          7,
+          50,
+          51,
+          52,
+          53
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          6,
+          50
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          4,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 128
+      },
+      {
+        "gate": "CCZ",
+        "input_lagrangian": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14
+        ],
+        "hermitian_pauli_basis": [
+          2,
+          4,
+          8
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          6
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 128
+      },
+      {
+        "gate": "CCZ",
+        "input_lagrangian": [
+          0,
+          2,
+          4,
+          6,
+          9,
+          11,
+          13,
+          15
+        ],
+        "hermitian_pauli_basis": [
+          2,
+          4,
+          9
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          6
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 128
+      },
+      {
+        "gate": "CCZ",
+        "input_lagrangian": [
+          0,
+          2,
+          5,
+          7,
+          40,
+          42,
+          45,
+          47
+        ],
+        "hermitian_pauli_basis": [
+          2,
+          5,
+          40
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          4,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 128
+      },
+      {
+        "gate": "CCZ",
+        "input_lagrangian": [
+          0,
+          2,
+          5,
+          7,
+          41,
+          43,
+          44,
+          46
+        ],
+        "hermitian_pauli_basis": [
+          2,
+          5,
+          41
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          4,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 128
+      },
+      {
+        "gate": "CCZ",
+        "input_lagrangian": [
+          0,
+          3,
+          4,
+          7,
+          24,
+          27,
+          28,
+          31
+        ],
+        "hermitian_pauli_basis": [
+          3,
+          4,
+          24
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 128
+      },
+      {
+        "gate": "CCZ",
+        "input_lagrangian": [
+          0,
+          3,
+          4,
+          7,
+          25,
+          26,
+          29,
+          30
+        ],
+        "hermitian_pauli_basis": [
+          3,
+          4,
+          25
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 128
+      },
+      {
+        "gate": "CCZ",
+        "input_lagrangian": [
+          0,
+          3,
+          5,
+          6,
+          56,
+          59,
+          61,
+          62
+        ],
+        "hermitian_pauli_basis": [
+          3,
+          5,
+          56
+        ],
+        "eigenvalue_frame_permutation": [
+          1,
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 128
+      },
+      {
+        "gate": "CCZ",
+        "input_lagrangian": [
+          0,
+          3,
+          5,
+          6,
+          57,
+          58,
+          60,
+          63
+        ],
+        "hermitian_pauli_basis": [
+          3,
+          5,
+          57
+        ],
+        "eigenvalue_frame_permutation": [
+          1,
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 128
+      },
+      {
+        "gate": "CS_yz_CCZ",
+        "input_lagrangian": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          2,
+          4
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 512
+      },
+      {
+        "gate": "CS_yz_CCZ",
+        "input_lagrangian": [
+          0,
+          1,
+          2,
+          3,
+          32,
+          33,
+          34,
+          35
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          2,
+          32
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          6
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 128
+      },
+      {
+        "gate": "CS_yz_CCZ",
+        "input_lagrangian": [
+          0,
+          1,
+          2,
+          3,
+          36,
+          37,
+          38,
+          39
+        ],
+        "hermitian_pauli_basis": [
+          1,
+          2,
+          36
+        ],
+        "eigenvalue_frame_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          6
+        ],
+        "affine_maps_checked": 1344,
+        "antecedent_satisfying_affine_maps": 128
+      }
+    ],
+    "counterexample_witness_count": 3,
+    "counterexample_stationary": true,
+    "counterexample_third_level": true,
+    "counterexample_clifford": false,
+    "counterexample_permutation": [
+      7,
+      2,
+      1,
+      4,
+      0,
+      5,
+      6,
+      3
+    ],
+    "counterexample_phases_mu4": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "counterexample_alpha": [
+      0,
+      6,
+      2,
+      4,
+      1,
+      7,
+      3,
+      5
+    ],
+    "counterexample_product_flag_indices": [
+      16
+    ],
+    "counterexample_common_flag_indices": [],
+    "distinct_permutations_screened_against_all_flags": 2688,
+    "seconds": 0.7858656999887899
+  }
+}

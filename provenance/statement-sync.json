@@ -1,0 +1,67 @@
+[
+  {
+    "date": "2026-10-04",
+    "revision": "428baebc2c5ed909383f4121af74405e2fbee5e6",
+    "changes": []
+  },
+  {
+    "date": "2026-10-05",
+    "revision": "fbfe3430b82d48d5e5bfe6636d53a9881fa066fc",
+    "changes": [
+      {
+        "label": "cert:e6-root-words",
+        "change": "statement",
+        "navigation": [
+          "C19",
+          "C19"
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-10-05",
+    "revision": "830fed2fa3f20b355240ba62cd93e0435a1d4991",
+    "changes": [
+      {
+        "label": "cert:three-qubit-flag-preserving-involution-rays",
+        "change": "statement",
+        "navigation": [
+          "C2",
+          "C2"
+        ]
+      },
+      {
+        "label": "cert:clifford-involution-groups-in-no-pauli-masa",
+        "change": "statement",
+        "navigation": [
+          "C4",
+          "C4"
+        ]
+      },
+      {
+        "label": "cert:r4-representatives-up-to-clifford-conjugacy",
+        "change": "statement",
+        "navigation": [
+          "C6",
+          "C6"
+        ]
+      },
+      {
+        "label": "cert:balanced-rank-two-branch",
+        "change": "statement",
+        "navigation": [
+          "C10",
+          "C10"
+        ]
+      },
+      {
+        "label": "cert:e6-gate-level-five",
+        "change": "statement",
+        "navigation": [
+          "C18",
+          "C18"
+        ]
+      }
+    ]
+  }
+]

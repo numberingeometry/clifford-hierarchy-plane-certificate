@@ -1,0 +1,2 @@
+# Optional C compiler for (C7) and (C15)
+ziglang==0.15.2

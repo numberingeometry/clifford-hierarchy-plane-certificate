@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "fact": "r4-representatives-up-to-clifford-conjugacy",
+  "paper_label": "cert:r4-representatives-up-to-clifford-conjugacy",
+  "navigation": "C6",
+  "classification": "proof",
+  "statement": {
+    "path": "statement.tex",
+    "sha256": "13706a9382745833e703e6f2244eb80cc89ed6d72fd6b2532864c8960cc9bb68",
+    "manuscript_revision": "830fed2fa3f20b355240ba62cd93e0435a1d4991",
+    "title": "Representatives of $\\mathscr R_4$ up to Clifford conjugacy",
+    "full_tex": "A list of $1{,}020$ gates of the form~\\eqref{core:eq:row} on four qubits contains a Clifford conjugate of every $h\\in\\mathscr R_4$. Exactly ten listed $M$ have $|N(M)|-1\\ge63$, and they lie in $\\C_2(4)$.\n"
+  },
+  "finite_domain": "32,768 triangular seeds, 2,064 involutions, 163,216 affine-closed point maps, 43 phase forests and 2,818,048 phase rows; the 1,020 listed gates.",
+  "analytic_entrance_exit_labels": [
+    "app:finite-endpoint"
+  ],
+  "dependent_certificates": [],
+  "conventions": "../../paper/conventions.json",
+  "checker_identity": {
+    "four-qubit/src/check_coverage.py": "3c7ec1e09c2aca3176551a4e3be3fae063723f8f680a921f130d5089cb4eeec5",
+    "check.py": "998e8e640610e4b2407ab40cbc265af688e1ce38920425757e97c18f044783f1"
+  },
+  "routes": {
+    "recompute": {
+      "availability": "available",
+      "integrated": true,
+      "covered_subclaims": [
+        "Complete coverage of the forms (core:eq:row) up to Clifford conjugacy by the 1,020 listed gates; N(M) for each of them; the ten with |N(M)|-1 >= 63 lie in C_2(4)."
+      ],
+      "remaining_work": [],
+      "command": "python check.py math --fact r4-representatives-up-to-clifford-conjugacy",
+      "toolchain": "CPython 3.13.15; numpy==2.3.2",
+      "runtime_seconds": 4.766559700015932,
+      "last_accepted_run": {
+        "path": "../../results/r4-representatives-up-to-clifford-conjugacy.json",
+        "sha256": "d1f33d87970e040d9045f4de2876d4fbba70caed8c715aded4173a8055faa168",
+        "statement_sha256": "13706a9382745833e703e6f2244eb80cc89ed6d72fd6b2532864c8960cc9bb68",
+        "paper_revision": "830fed2fa3f20b355240ba62cd93e0435a1d4991",
+        "elapsed_seconds": 5.10622620000504,
+        "run": "20261005T045355749669Z-C6"
+      }
+    },
+    "verify_evidence": {
+      "availability": "available",
+      "integrated": true,
+      "covered_subclaims": [
+        "All supplied affine conjugators, the 43 phase forests, complete row coverage and the invariants of all 1,020 gates, including the ten-gate conclusion."
+      ],
+      "remaining_work": [],
+      "command": "python check.py math --fact r4-representatives-up-to-clifford-conjugacy --route verify_evidence",
+      "toolchain": "CPython 3.13.15; numpy==2.3.2",
+      "runtime_seconds": 4.683494699886069,
+      "last_accepted_run": null
+    }
+  },
+  "checker_conventions": "paper/conventions.json; each checker states its coordinate order in its docstring",
+  "backend": [
+    "row_coverage",
+    "C1"
+  ]
+}

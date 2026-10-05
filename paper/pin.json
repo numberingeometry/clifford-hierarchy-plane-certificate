@@ -1,0 +1,7 @@
+{
+  "revision": "830fed2fa3f20b355240ba62cd93e0435a1d4991",
+  "file": "WZ.tex",
+  "sha256": "f2074a978cd8a8243a2735a9ba7a3e451090a8e2cd4eb354f0af11908f498911",
+  "frozen": "the statements of the 19 finite facts of the paper, above the dashed line of each box",
+  "comparison": "label and statement words after removing comments and colour groups (statement_digest in check.py)"
+}

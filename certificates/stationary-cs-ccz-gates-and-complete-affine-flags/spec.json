@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "fact": "stationary-cs-ccz-gates-and-complete-affine-flags",
+  "paper_label": "cert:stationary-cs-ccz-gates-and-complete-affine-flags",
+  "navigation": "C1",
+  "classification": "proof",
+  "statement": {
+    "path": "statement.tex",
+    "sha256": "d5cb23f689943ba328234b4afc0c7e005a0369af41361530008966e90aa4821a",
+    "manuscript_revision": "830fed2fa3f20b355240ba62cd93e0435a1d4991",
+    "title": "Stationary gates $\\mathrm{CS}_{yz}^a\\CCZ^b$ and complete affine flags",
+    "full_tex": "The gates $G=\\mathrm{CS}_{yz}^a\\CCZ^b$ with $a,b\\in\\F_2$, that is, $I$, $\\mathrm{CS}_{yz}$, $\\CCZ$ and $\\mathrm{CS}_{yz}\\CCZ$, are stationary, with $135$, $3$, $15$ and $3$ GSC pairs. Let $\\pi$ be the permutation of $CGC^\\dagger$, where $C\\in\\C_2(3)$ maps the Pauli MASA of an input Lagrangian of $G$ to the diagonal matrices. Then for every affine permutation $\\alpha$ of $\\F_2^3$, if $\\alpha\\pi$ and the translations preserve a common complete affine flag, so do $\\alpha$, $\\pi$ and the translations.\n"
+  },
+  "finite_domain": "The four gates I, CS_yz, CCZ and CS_yz CCZ; the 135 Lagrangians of V_3; the 21 complete affine flags and the 1,344 affine permutations of F_2^3.",
+  "analytic_entrance_exit_labels": [
+    "lem:tool-bridge"
+  ],
+  "dependent_certificates": [],
+  "conventions": "../../paper/conventions.json",
+  "checker_identity": {
+    "src/checking/c16.py": "5e5bbfc9c52afeaa2d51d39d4da4258f09eac1e5b9c0263d8f445f1fe2fadb3e",
+    "check.py": "998e8e640610e4b2407ab40cbc265af688e1ce38920425757e97c18f044783f1"
+  },
+  "routes": {
+    "recompute": {
+      "availability": "available",
+      "integrated": true,
+      "covered_subclaims": [
+        "The witnesses of each gate (135, 3, 15 and 3, all of the form (L,L)); for each of the 156 input Lagrangians, the flag implication for all 1,344 affine permutations against the 21 flags; the counterexample D of the paper."
+      ],
+      "remaining_work": [],
+      "command": "python check.py math --fact stationary-cs-ccz-gates-and-complete-affine-flags",
+      "toolchain": "CPython 3.13.15; standard library",
+      "runtime_seconds": 0.7922085000318475,
+      "last_accepted_run": {
+        "path": "../../results/stationary-cs-ccz-gates-and-complete-affine-flags.json",
+        "sha256": "f5066ea8ed58518595da8f78e3e44e230cc374ab0dee3eb03e7b3f4ce75ecaf8",
+        "statement_sha256": "d5cb23f689943ba328234b4afc0c7e005a0369af41361530008966e90aa4821a",
+        "paper_revision": "fbfe3430b82d48d5e5bfe6636d53a9881fa066fc",
+        "elapsed_seconds": 0.7922085000318475,
+        "run": "20261005T032237562458Z-C1"
+      }
+    },
+    "verify_evidence": {
+      "availability": "not-yet-available",
+      "integrated": false,
+      "covered_subclaims": [],
+      "remaining_work": [
+        "No verifier of supplied evidence separate from the recomputation."
+      ],
+      "command": "python check.py math --fact stationary-cs-ccz-gates-and-complete-affine-flags --route verify_evidence",
+      "toolchain": null,
+      "runtime_seconds": null,
+      "last_accepted_run": null
+    }
+  },
+  "checker_conventions": "paper/conventions.json; each checker states its coordinate order in its docstring",
+  "backend": [
+    "c16",
+    null
+  ]
+}

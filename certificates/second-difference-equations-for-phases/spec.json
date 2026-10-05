@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "fact": "second-difference-equations-for-phases",
+  "paper_label": "cert:second-difference-equations-for-phases",
+  "navigation": "C5",
+  "classification": "proof",
+  "statement": {
+    "path": "statement.tex",
+    "sha256": "0b230fa9d7eb60b130dc98342652d8ba47619da9cf4ffe10a22b35035c892fb4",
+    "manuscript_revision": "830fed2fa3f20b355240ba62cd93e0435a1d4991",
+    "title": "Second-difference equations for phases",
+    "full_tex": "Let $f:\\F_2^3\\to\\mathbb R/\\mathbb Z$, let $T$ be a symmetric binary $3\\times3$ matrix, and let $\\Theta$ be as in the proof of Lemma~\\ref{lem:m-M-1}. Then:\n\\[\n\\begin{array}{c|c|c}\nT&\\text{equations}&\\text{consequence}\\\\\\hline\n\\operatorname{rank}T=3&\\Delta_k\\Delta_af=0\\ (k\\cdot Ta=0)&4\\Delta_jf=0\\ (j=1,2,3)\\\\\n\\operatorname{rank}T=3\\text{ or }\\operatorname{im}T=\\Span\\{e_1,e_2\\},\\ T\\ne\\Theta&\\Delta_{\\Theta Ta}\\Delta_af=0\\ (\\text{all }a)&4\\Delta_jf=0\\ (j=1,2)\\\\\nT=\\Theta&\\Delta_{\\Theta Ta}\\Delta_af=0\\ (\\text{all }a)&2\\Delta_jf=0\\ (j=1,2)\n\\end{array}\n\\]\n"
+  },
+  "finite_domain": "The 28 nonsingular symmetric binary 3x3 matrices of the first system; the 28 nonsingular and 4 rank-two matrices of the others (60 systems).",
+  "analytic_entrance_exit_labels": [
+    "lem:m-M-1"
+  ],
+  "dependent_certificates": [],
+  "conventions": "../../paper/conventions.json",
+  "checker_identity": {
+    "src/checking/n3_descent/__init__.py": "487c40ee51b1ddeb8bd96702e0b048715aa71111fdf2a5ebbf58933ed81ae465",
+    "src/checking/n3_descent/n3_descent_check.py": "729e2ac21378f958c512a9d9c2916252dbadc369f332b6d9399f9c1093dc7993",
+    "src/checking/n3_descent/runner.py": "83f9971a2d8b6ec7b9110a06caed2e361de58bf07bdca1ca68297ca5d078b2d2",
+    "check.py": "998e8e640610e4b2407ab40cbc265af688e1ce38920425757e97c18f044783f1"
+  },
+  "routes": {
+    "recompute": {
+      "availability": "available",
+      "integrated": true,
+      "covered_subclaims": [
+        "For each system and each of its target rows, membership in the integer lattice spanned by the rows of the equations."
+      ],
+      "remaining_work": [],
+      "command": "python check.py math --fact second-difference-equations-for-phases",
+      "toolchain": "CPython 3.13.15; standard library",
+      "runtime_seconds": 0.028908399981446564,
+      "last_accepted_run": {
+        "path": "../../results/second-difference-equations-for-phases.json",
+        "sha256": "6891aaaf13472189f8c813fba7e6a4d23c9130511d18d30a8ad860dc1c5c66e9",
+        "statement_sha256": "0b230fa9d7eb60b130dc98342652d8ba47619da9cf4ffe10a22b35035c892fb4",
+        "paper_revision": "fbfe3430b82d48d5e5bfe6636d53a9881fa066fc",
+        "elapsed_seconds": 0.028908399981446564,
+        "run": "20261005T032248405391Z-C5"
+      }
+    },
+    "verify_evidence": {
+      "availability": "not-yet-available",
+      "integrated": false,
+      "covered_subclaims": [],
+      "remaining_work": [
+        "No verifier of supplied evidence separate from the recomputation."
+      ],
+      "command": "python check.py math --fact second-difference-equations-for-phases --route verify_evidence",
+      "toolchain": null,
+      "runtime_seconds": null,
+      "last_accepted_run": null
+    }
+  },
+  "checker_conventions": "paper/conventions.json; each checker states its coordinate order in its docstring",
+  "backend": [
+    "n3_descent",
+    "C12"
+  ]
+}

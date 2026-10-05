@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "paper": {
+    "revision": "830fed2fa3f20b355240ba62cd93e0435a1d4991",
+    "file": "WZ.tex",
+    "sha256": "f2074a978cd8a8243a2735a9ba7a3e451090a8e2cd4eb354f0af11908f498911",
+    "frozen": "the statements of the 19 finite facts of the paper, above the dashed line of each box",
+    "comparison": "label and statement words after removing comments and colour groups (statement_digest in check.py)"
+  },
+  "facts": [
+    {
+      "label": "cert:stationary-cs-ccz-gates-and-complete-affine-flags",
+      "folder": "certificates/stationary-cs-ccz-gates-and-complete-affine-flags",
+      "navigation": "C1",
+      "title": "Stationary gates $\\mathrm{CS}_{yz}^a\\CCZ^b$ and complete affine flags",
+      "classification": "proof",
+      "statement_sha256": "d5cb23f689943ba328234b4afc0c7e005a0369af41361530008966e90aa4821a",
+      "dependencies": [],
+      "declared_consumers": [
+        "lem:tool-bridge"
+      ]
+    },
+    {
+      "label": "cert:three-qubit-flag-preserving-involution-rays",
+      "folder": "certificates/three-qubit-flag-preserving-involution-rays",
+      "navigation": "C2",
+      "title": "Three-qubit involutions with a flag-preserving permutation",
+      "classification": "proof",
+      "statement_sha256": "c0ae4d5d6b7ce9722c5e74295b9ed50688d981bfae4fcafda317d0b846b0c7a2",
+      "dependencies": [],
+      "declared_consumers": [
+        "gauss-lem:exceptional"
+      ]
+    },
+    {
+      "label": "cert:cliffords-commuting-with-hstar",
+      "folder": "certificates/cliffords-commuting-with-hstar",
+      "navigation": "C3",
+      "title": "Cliffords commuting with $H_*$",
+      "classification": "proof",
+      "statement_sha256": "f21be8275f97112ab12464d2085f3918a0a480e8761f9b39e2c87ca028e32359",
+      "dependencies": [],
+      "declared_consumers": [
+        "gauss-lem:three-correction-compatibility"
+      ]
+    },
+    {
+      "label": "cert:clifford-involution-groups-in-no-pauli-masa",
+      "folder": "certificates/clifford-involution-groups-in-no-pauli-masa",
+      "navigation": "C4",
+      "title": "Clifford involution groups in no Pauli MASA",
+      "classification": "proof",
+      "statement_sha256": "81e15a0fcebceedcce1c89d7fc7af24400964e39f050baad463fa616e385533c",
+      "dependencies": [],
+      "declared_consumers": [
+        "lem:m-M-1"
+      ]
+    },
+    {
+      "label": "cert:second-difference-equations-for-phases",
+      "folder": "certificates/second-difference-equations-for-phases",
+      "navigation": "C5",
+      "title": "Second-difference equations for phases",
+      "classification": "proof",
+      "statement_sha256": "0b230fa9d7eb60b130dc98342652d8ba47619da9cf4ffe10a22b35035c892fb4",
+      "dependencies": [],
+      "declared_consumers": [
+        "lem:m-M-1"
+      ]
+    },
+    {
+      "label": "cert:r4-representatives-up-to-clifford-conjugacy",
+      "folder": "certificates/r4-representatives-up-to-clifford-conjugacy",
+      "navigation": "C6",
+      "title": "Representatives of $\\mathscr R_4$ up to Clifford conjugacy",
+      "classification": "proof",
+      "statement_sha256": "13706a9382745833e703e6f2244eb80cc89ed6d72fd6b2532864c8960cc9bb68",
+      "dependencies": [],
+      "declared_consumers": [
+        "app:finite-endpoint"
+      ]
+    },
+    {
+      "label": "cert:plane-meeting-fixed-pauli-labels",
+      "folder": "certificates/plane-meeting-fixed-pauli-labels",
+      "navigation": "C7",
+      "title": "A plane meeting the fixed Pauli labels",
+      "classification": "proof",
+      "statement_sha256": "225dfcf80313338715a862ee3a75ace774d62afae749ee7dfb35eee3d0de1b16",
+      "dependencies": [
+        "cert:r4-representatives-up-to-clifford-conjugacy"
+      ],
+      "declared_consumers": [
+        "app:finite-endpoint"
+      ]
+    },
+    {
+      "label": "cert:pauli-terms-and-cubic-coefficient",
+      "folder": "certificates/pauli-terms-and-cubic-coefficient",
+      "navigation": "C8",
+      "title": "Pauli terms and the cubic coefficient",
+      "classification": "proof",
+      "statement_sha256": "e48ed7816422d3f8894a892dfa08573d4337faf18d14f467094c0505bcbc7208",
+      "dependencies": [],
+      "declared_consumers": [
+        "app:return-single"
+      ]
+    },
+    {
+      "label": "cert:normal-form-of-exceptional-balanced-configurations",
+      "folder": "certificates/normal-form-of-exceptional-balanced-configurations",
+      "navigation": "C9",
+      "title": "Normal form of the triples $(\\rho,u,D)$",
+      "classification": "proof",
+      "statement_sha256": "73341d3da6bd29afff6d66b3ae2633fdbc5e6c38e645f88d6c2a7e5817d5eb68",
+      "dependencies": [],
+      "declared_consumers": [
+        "app:return-balanced"
+      ]
+    },
+    {
+      "label": "cert:balanced-rank-two-branch",
+      "folder": "certificates/balanced-rank-two-branch",
+      "navigation": "C10",
+      "title": "The case $\\operatorname{rank}E=2$",
+      "classification": "proof",
+      "statement_sha256": "218c20c959830488d0b5f5bcfff637f4ee5b6a8ff357a20483c0519bcce62033",
+      "dependencies": [],
+      "declared_consumers": [
+        "app:return-balanced"
+      ]
+    },
+    {
+      "label": "cert:mixed-blocks-with-two-input-lagrangians",
+      "folder": "certificates/mixed-blocks-with-two-input-lagrangians",
+      "navigation": "C11",
+      "title": "Mixed blocks with two input Lagrangians",
+      "classification": "proof",
+      "statement_sha256": "b2c6d22b178ece35e3647baf96d165da2ba746b2d789dd11fefaac56e44733ec",
+      "dependencies": [],
+      "declared_consumers": [
+        "app:return-multiple"
+      ]
+    },
+    {
+      "label": "cert:block-form-clifford-classes",
+      "folder": "certificates/block-form-clifford-classes",
+      "navigation": "C12",
+      "title": "Clifford classes of the block forms",
+      "classification": "proof",
+      "statement_sha256": "85de7a37cbbcdcdf1a40ceee6a9db46937214a1277537401662c2d625f4e232b",
+      "dependencies": [],
+      "declared_consumers": [
+        "app:return-multiple"
+      ]
+    },
+    {
+      "label": "cert:invariant-sets-of-input-lagrangians",
+      "folder": "certificates/invariant-sets-of-input-lagrangians",
+      "navigation": "C13",
+      "title": "Invariant sets of input Lagrangians",
+      "classification": "proof",
+      "statement_sha256": "934a17a7f9f4092317cd70e03c005b43446b525dfbd131cd00ff99248900669c",
+      "dependencies": [
+        "cert:mixed-blocks-with-two-input-lagrangians",
+        "cert:block-form-clifford-classes"
+      ],
+      "declared_consumers": [
+        "app:return-multiple"
+      ]
+    },
+    {
+      "label": "cert:reduction-to-common-input-pair-domain",
+      "folder": "certificates/reduction-to-common-input-pair-domain",
+      "navigation": "C14",
+      "title": "Reduction of $B_0$ to $256$ gates",
+      "classification": "proof",
+      "statement_sha256": "66ebbfff0f6135aba30279df2bbc6a29e4a4ed764f2125670d5f5e23068093b1",
+      "dependencies": [],
+      "declared_consumers": [
+        "app:return-multiple"
+      ]
+    },
+    {
+      "label": "cert:block-pair-domains",
+      "folder": "certificates/block-pair-domains",
+      "navigation": "C15",
+      "title": "Pair domains for blocks",
+      "classification": "proof",
+      "statement_sha256": "950087275cc665c0a965fbb88ec8d0fe33dfc51693db301f77272ad8299fda27",
+      "dependencies": [
+        "cert:block-form-clifford-classes",
+        "cert:reduction-to-common-input-pair-domain"
+      ],
+      "declared_consumers": [
+        "app:return-multiple"
+      ]
+    },
+    {
+      "label": "cert:s6-two-group-criterion",
+      "folder": "certificates/s6-two-group-criterion",
+      "navigation": "C16",
+      "title": "A $2$-group criterion in $S_6$",
+      "classification": "proof",
+      "statement_sha256": "2c2516615c11282063c7a0fc235cb6cc61dd9862bef3bd66c1391ae39d5f5b58",
+      "dependencies": [],
+      "declared_consumers": [
+        "lem:fib-sharp-small"
+      ]
+    },
+    {
+      "label": "cert:s6-sylow-cosets-and-three-element-subsets",
+      "folder": "certificates/s6-sylow-cosets-and-three-element-subsets",
+      "navigation": "C17",
+      "title": "Sylow cosets in $S_6$ and three-element subsets",
+      "classification": "proof",
+      "statement_sha256": "d6d1133a2b700419225416e4c3f980e47bfb183316af6f38601adb0f4a2d3d6a",
+      "dependencies": [],
+      "declared_consumers": [
+        "lem:fib-sharp-small"
+      ]
+    },
+    {
+      "label": "cert:e6-gate-level-five",
+      "folder": "certificates/e6-gate-level-five",
+      "navigation": "C18",
+      "title": "The gate $U_{E_6}$ lies in $\\C_5(5)$",
+      "classification": "proof",
+      "statement_sha256": "80a76f80dd4a5c65a7f934d4defb603b34e015e80aec772eda464301359aad6a",
+      "dependencies": [],
+      "declared_consumers": [
+        "thm:exact-cells"
+      ]
+    },
+    {
+      "label": "cert:e6-root-words",
+      "folder": "certificates/e6-root-words",
+      "navigation": "C19",
+      "title": "Root words for $E_6$",
+      "classification": "proof",
+      "statement_sha256": "9241cd099a81c91d59b087d1c7881f12021c40dbb4bf775facfe63f45bda897c",
+      "dependencies": [],
+      "declared_consumers": [
+        "thm:exact-cells"
+      ]
+    }
+  ],
+  "graph_scope": "Explicit accepted-fact dependencies are acyclic. Definition-only references are retained separately; manuscript direct references and declared consumers remain navigation evidence."
+}
